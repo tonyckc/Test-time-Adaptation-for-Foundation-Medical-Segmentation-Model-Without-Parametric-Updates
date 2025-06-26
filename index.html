@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Test-time Adaptation for Image Compression with Distribution Regularization">
+        content="Test-time Adaptation for Foundation Medical Segmentation Model without Parametric Updates">
   <meta name="keywords" content="Small Data, Domain Generalization, Bayesian Networks">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Test-time Adaptation for Image Compression with Distribution Regularization</title>
+  <title>Test-time Adaptation for Foundation Medical Segmentation Model without Parametric Updates</title>
 
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
@@ -52,7 +52,7 @@
         </a>
         <div class="navbar-dropdown">
           <a class="navbar-item" href="https://github.com/tonyckc/SDDG/">
-            Test-time Adaptation for Image Compression with Distribution Regularization
+            Test-time Adaptation for Foundation Medical Segmentation Model without Parametric Updates
           </a>
         </div>
       </div>
@@ -67,20 +67,24 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Test-time Adaptation for Image Compression with Distribution Regularization<br>
+          <h1 class="title is-1 publication-title">Test-time Adaptation for Foundation Medical Segmentation Model without Parametric Updates<br>
             <small>
-              <span style="font-size: 60%;">International Conference on Learning Representations (ICLR) 2025</span>
+              <span style="font-size: 60%;">International Conference on Computer Vision (ICCV) 2025</span>
             </small>
           </h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://tonyckc.github.io/">Kecheng Chen</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://ppingzhang.github.io/">Pingping Zhang</a><sup>2</sup>,</span>
+              <a href="https://scholars.cityu.edu.hk/en/persons/xinyuluo8/">Xinyu Luo</a><sup>2</sup>,</span>
             <span class="author-block">
               <a href="https://wonderseven.github.io/">Tiexin Qin</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://www.cs.cityu.edu.hk/~shiqwang/">Shiqi Wang,</a><sup>2</sup>
+              <a href="https://scholars.cityu.edu.hk/en/persons/jliu288/">Jie Liu</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholars.cityu.edu.hk/en/persons/liuhui3/">Hui Liu</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://oncology.med.hku.hk/en/Our-Team/Academic-Staff/Professor-Victor-Ho-fun-LEE/Professor-Victor-Ho-fun-LEE-Profile/">Victor Ho Fun Lee,</a><sup>2</sup>
             </span>
             <span class="author-block">
               <a href="https://www.ee.cityu.edu.hk/~hpyan/">Hong Yan,</a><sup>1</sup>
@@ -92,14 +96,14 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup> Department of Electrical Engineering and the CIMDA, City University of  Hong Kong</span><br>
-            <span class="author-block"><sup>2</sup> Department of Computer Science, City University of  Hong Kong</span><br>
+            <span class="author-block"><sup>2</sup> Department of Clinical Oncology, The University of  Hong Kong</span><br>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://openreview.net/forum?id=bsnRUkVn63"
+                <a href="https://arxiv.org/pdf/2504.02008"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -111,7 +115,7 @@
               <!-- Code Link. -->
               <span class="tooltip">
               <span class="link-block">
-                <a href="https://github.com/tonyckc/TTA-Image-Compression-with-Distribution-Regularization"
+                <a href="https://github.com/tonyckc/TTA-DAL-CRF"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -146,7 +150,17 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Current test- or compression-time adaptation image compression (TTA-IC) approaches, which leverage both latent and decoder refinements as a two-step adaptation scheme, have potentially enhanced the rate-distortion (R-D) performance of learned image compression models on cross-domain compression tasks, \textit{e.g.,} from natural to screen content images. However, compared with the emergence of various decoder refinement variants, the latent refinement, as an inseparable ingredient, is barely tailored to cross-domain scenarios. To this end, we are interested in developing an advanced latent refinement method by extending the effective hybrid latent refinement (HLR) method, which is designed for \textit{in-domain} inference improvement but shows noticeable degradation of the rate cost in \textit{cross-domain} tasks. Specifically, we first provide theoretical analyses, in a cue of marginalization approximation from in- to cross-domain scenarios, to uncover that the vanilla HLR suffers from an underlying mismatch between refined Gaussian conditional and hyperprior distributions, leading to deteriorated joint probability approximation of marginal distribution with increased rate consumption. To remedy this issue, we introduce a simple Bayesian approximation-endowed \textit{distribution regularization} to encourage learning a better joint probability approximation in a plug-and-play manner. Extensive experiments on six in- and cross-domain datasets demonstrate that our proposed method not only improves the R-D performance compared with other latent refinement counterparts, but also can be flexibly integrated into existing TTA-IC methods with incremental benefits.
+            Foundation medical segmentation models, with MedSAM being the most popular, have achieved promising performance across organs and lesions. However,
+MedSAM still suffers from compromised performance
+on specific lesions with intricate structures and appearance, as well as bounding box prompt-induced perturbations. Although current test-time adaptation (TTA) methods for medical image segmentation may tackle this
+issue, partial (e.g., batch normalization) or whole parametric updates restrict their effectiveness due to limited update signals or catastrophic forgetting in large models. Meanwhile, these approaches ignore the computational complexity during adaptation, which is particularly significant for modern foundation models. To this
+end, our theoretical analyses reveal that directly refining image embeddings is feasible to approach the same goal
+as parametric updates under the MedSAM architecture, which enables us to realize high computational efficiency and segmentation performance without the risk
+of catastrophic forgetting. Under this framework, we propose to encourage maximizing factorized conditional
+probabilities of the posterior prediction probability using a proposed distribution-approximated latent conditional random field loss combined with an entropy minimization loss. Experiments show that we achieve about
+3% Dice score improvements across three datasets while
+reducing computational complexity by over 7 times.
+
           </p>
         </div>
       </div>
