@@ -6,7 +6,7 @@ If you find TTA-DAL-CRF useful for your work please cite:
 ```
 @article{kecheng2025ICCV,
   title={Test-time Adaptation for Foundation Medical Segmentation Model without Parametric Updates},
-  author={Kecheng Chen, Ziyuan Luo, Tiexin Qin, Jie Liu, Hui Liu, Victor Ho Fun Lee, Hong Yan, and Haoliang Li},
+  author={Kecheng Chen, Xinyu Luo, Tiexin Qin, Jie Liu, Hui Liu, Victor Ho Fun Lee, Hong Yan, and Haoliang Li},
   conference={International Conference on Computer Vision 2025},
   year={2025},
 }
