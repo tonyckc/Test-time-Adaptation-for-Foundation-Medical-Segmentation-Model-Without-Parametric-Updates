@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Test-time Adaptation for Image Compression with Distribution Regularization">
+  <meta name="keywords" content="Small Data, Domain Generalization, Bayesian Networks">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test-time Adaptation for Image Compression with Distribution Regularization</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/video_comparison.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://tonyckc.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/tonyckc/SDDG/">
+            Test-time Adaptation for Image Compression with Distribution Regularization
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Test-time Adaptation for Image Compression with Distribution Regularization<br>
+            <small>
+              <span style="font-size: 60%;">International Conference on Learning Representations (ICLR) 2025</span>
+            </small>
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://tonyckc.github.io/">Kecheng Chen</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://ppingzhang.github.io/">Pingping Zhang</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://wonderseven.github.io/">Tiexin Qin</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.cs.cityu.edu.hk/~shiqwang/">Shiqi Wang,</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://www.ee.cityu.edu.hk/~hpyan/">Hong Yan,</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://hlli1991.github.io/">Haoliang Li</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup> Department of Electrical Engineering and the CIMDA, City University of  Hong Kong</span><br>
+            <span class="author-block"><sup>2</sup> Department of Computer Science, City University of  Hong Kong</span><br>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://openreview.net/forum?id=bsnRUkVn63"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!--/ PDF Link. -->
+              <!-- Code Link. -->
+              <span class="tooltip">
+              <span class="link-block">
+                <a href="https://github.com/tonyckc/TTA-Image-Compression-with-Distribution-Regularization"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              <!--/ Code Link. -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Figure_1. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div style="text-align: center;">
+          <img src="assets/TTA_compression.PNG" alt="Figure 1"  width="60%"/>
+        </div>
+      </div>
+    </div>
+    <!--/ Figure_1. -->
+    
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Current test- or compression-time adaptation image compression (TTA-IC) approaches, which leverage both latent and decoder refinements as a two-step adaptation scheme, have potentially enhanced the rate-distortion (R-D) performance of learned image compression models on cross-domain compression tasks, \textit{e.g.,} from natural to screen content images. However, compared with the emergence of various decoder refinement variants, the latent refinement, as an inseparable ingredient, is barely tailored to cross-domain scenarios. To this end, we are interested in developing an advanced latent refinement method by extending the effective hybrid latent refinement (HLR) method, which is designed for \textit{in-domain} inference improvement but shows noticeable degradation of the rate cost in \textit{cross-domain} tasks. Specifically, we first provide theoretical analyses, in a cue of marginalization approximation from in- to cross-domain scenarios, to uncover that the vanilla HLR suffers from an underlying mismatch between refined Gaussian conditional and hyperprior distributions, leading to deteriorated joint probability approximation of marginal distribution with increased rate consumption. To remedy this issue, we introduce a simple Bayesian approximation-endowed \textit{distribution regularization} to encourage learning a better joint probability approximation in a plug-and-play manner. Extensive experiments on six in- and cross-domain datasets demonstrate that our proposed method not only improves the R-D performance compared with other latent refinement counterparts, but also can be flexibly integrated into existing TTA-IC methods with incremental benefits.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="column is-centered has-text-centered">
+      <h2 class="title is-3">Convergence Visualization</h2>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <section class="hero is-light is-small">
+          <div class="hero-body">
+            <div class="container">
+                <div style="text-align: center;">
+                  <img src="assets/performance.png" alt="Figure 1"  width="100%"/>
+                </div>
+                <div class="content has-text-justified">
+                  <p> The proposed distribution regularization can alleviate the distribution mismatch problem at the test-time phase. </p>
+                </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+
+  </div>
+</section>
+
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{kecheng2025ICLR,
+  title={Test-time Adaptation for Image Compression with Distribution Regularization},
+  author={Kecheng Chen, Pingping Zhang, Tiexin Qin, Shiqi Wang, Hong Yan, and Haoliang Li},
+  conference={International Conference on Learning Representations},
+  year={2025},
+}</code></pre>
+  </div>
+</section>
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=rhBYF1NVAJSwRuDj6gegOAQodKeBZljSttYXlL4GWcc&cl=ffffff&w=a"></script>
+
+
+<footer class="footer">
+  <div class="container">
+<!--     <div class="content has-text-centered"> -->
+<!--       <a class="icon-link"
+         href="https://camera.pku.edu.cn/Publication.htm">
+        <i class="fas fa-file-pdf"></i>
+      </a> -->
+<!--       <a class="icon-link" href="https://github.com/tonyckc" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a> -->
+<!--     </div> -->
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/tonyckc/WT-PSE">source code</a> of this website,
+            we just ask that you link back to this page in the footer. Some of the source code of this 
+            website is borrowed from <a href="https://nerfies.github.io">nerfies</a> and <a href="https://dorverbin.github.io/refnerf/">Ref-NeRF</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
