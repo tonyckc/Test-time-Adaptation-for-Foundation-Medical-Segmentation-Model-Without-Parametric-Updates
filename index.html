@@ -138,7 +138,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div style="text-align: center;">
-          <img src="assets/TTA_compression.PNG" alt="Figure 1"  width="60%"/>
+          <img src="assets/framework-tta-dal-crf.PNG" alt="Figure 1"  width="60%"/>
         </div>
       </div>
     </div>
@@ -169,7 +169,7 @@ reducing computational complexity by over 7 times.
 
     <!-- Paper video. -->
     <div class="column is-centered has-text-centered">
-      <h2 class="title is-3">Convergence Visualization</h2>
+      <h2 class="title is-3">Visualization with iterations</h2>
     </div>
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -177,10 +177,12 @@ reducing computational complexity by over 7 times.
           <div class="hero-body">
             <div class="container">
                 <div style="text-align: center;">
-                  <img src="assets/performance.png" alt="Figure 1"  width="100%"/>
+                  <img src="assets/performance-tta-dal-crf.PNG" alt="Figure 1"  width="100%"/>
                 </div>
                 <div class="content has-text-justified">
-                  <p> The proposed distribution regularization can alleviate the distribution mismatch problem at the test-time phase. </p>
+                  <p> Visulized process of latent refinement with iterations. The first, second, and third rows denote the segmentation result, corresponding visualization of
+channel-average refined latent embedding and corresponding
+DAL-CRF loss for each spatial position. </p>
                 </div>
             </div>
           </div>
@@ -198,10 +200,11 @@ reducing computational complexity by over 7 times.
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{kecheng2025ICLR,
-  title={Test-time Adaptation for Image Compression with Distribution Regularization},
-  author={Kecheng Chen, Pingping Zhang, Tiexin Qin, Shiqi Wang, Hong Yan, and Haoliang Li},
-  conference={International Conference on Learning Representations},
+    <pre><code>@article{kecheng2025ICCV,
+  title={Test-time Adaptation for Foundation Medical Segmentation Model without
+Parametric Updates},
+  author={Kecheng Chen, Xinyu Luo, Tiexin Qin, Jie Liu, Hui Liu,Victor Ho Fun Lee, Hong Yan, and Haoliang Li},
+  conference={International Conference on Computer Vision},
   year={2025},
 }</code></pre>
   </div>
