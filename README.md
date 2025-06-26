@@ -1,4 +1,4 @@
-# TTA-IC-DR
+# TTA-DAL-CRF
 
 This repository contains the source code for the project page of [TTA-DAL-CRF](https://tonyckc.github.io/Test-time-Adaptation-for-Foundation-Medical-Segmentation-Model-Without-Parametric-Updates/).
 
