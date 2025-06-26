@@ -1,13 +1,13 @@
 # TTA-IC-DR
 
-This repository contains the source code for the project page of [TTA-IC-DR](https://tonyckc.github.io/TTA-IC-DR/).
+This repository contains the source code for the project page of [TTA-DAL-CRF](https://tonyckc.github.io/Test-time-Adaptation-for-Foundation-Medical-Segmentation-Model-Without-Parametric-Updates/).
 
-If you find TTA-IC-DR useful for your work please cite:
+If you find TTA-DAL-CRF useful for your work please cite:
 ```
-@article{kecheng2025ICLR,
-  title={Test-time Adaptation for Image Compression with Distribution Regularization},
-  author={Kecheng Chen, Pingping Zhang, Tiexin Qin, Shiqi Wang, Hong Yan, and Haoliang Li},
-  conference={International Conference on Learning Representations},
+@article{kecheng2025ICCV,
+  title={Test-time Adaptation for Foundation Medical Segmentation Model without Parametric Updates},
+  author={Kecheng Chen, Ziyuan Luo, Tiexin Qin, Jie Liu, Hui Liu, Victor Ho Fun Lee, Hong Yan, and Haoliang Li},
+  conference={International Conference on Computer Vision 2025},
   year={2025},
 }
 ```
